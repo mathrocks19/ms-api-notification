@@ -3,10 +3,10 @@ import { ISendMailNewUserDTO } from "./isend-mail-new-user-dto.interface";
 
 export class SendMailNewUserApplication {
     constructor(private readonly mailAccess: IMailAccess) {}
-    
+
     /**
      * Handle
-     * @param mailReq 
+     * @param mailReq
      */
     async handle(mailReq: ISendMailNewUserDTO): Promise<void> {
         await this.mailAccess.send({
@@ -15,8 +15,8 @@ export class SendMailNewUserApplication {
                 name: mailReq.name
             },
             from: {
-                email: 'swm@swm.com',
-                name: 'SWM Tecnologia'
+                email: 'matheus@google.com',
+                name: 'Matheus Ltda.'
             },
             subject: `Seja bem vindo(a) ${mailReq.name}`,
             body: `<p>Seja bem vindo(a) ${mailReq.name}</p>`

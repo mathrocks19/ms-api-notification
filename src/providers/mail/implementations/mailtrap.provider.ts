@@ -18,7 +18,7 @@ export class MailTrap implements IMailAccess {
 
     /**
      * Send Mail
-     * @param mail 
+     * @param mail
      */
     async send(mail: IMessageMail): Promise<void> {
         await this.transporter.sendMail({

@@ -9,7 +9,7 @@ export class SendMailNewUserController {
 
     /**
      * Handle
-     * @param req 
+     * @param req
      */
     async handle(req: IMessagerAccessRequest): Promise<IResponseAccessResponse> {
         await this.sendMailNewUserApplication.handle({

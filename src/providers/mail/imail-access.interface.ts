@@ -13,7 +13,7 @@ export interface IMessageMail {
 export interface IMailAccess {
     /**
      * Send
-     * @param mail 
+     * @param mail
      */
     send(mail: IMessageMail): Promise<void>;
 }

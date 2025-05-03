@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "ts-node-dev --respawn --transpile-only ./src/index.ts",
+    "start:dev": "ts-node-dev -P tsconfig.json --respawn --transpile-only src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Giovani Cassiano Nogueira",
+  "author": "Matheus da Cunha Viana",
   "license": "MIT",
   "devDependencies": {
     "@types/amqplib": "^0.8.2",
